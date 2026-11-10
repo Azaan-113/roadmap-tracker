@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Roadmap Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div>
+      <h1>My Career Roadmap ✨</h1>
+      <p>Plan your goals. Track your growth. Build your future.</p>
+    </div>
+    <span class="header-icon">🚀</span>
+  </header>
+
+  <main class="container">
+
+    <section class="overview">
+      <div class="stat-card">
+        <span>Total Goals</span>
+        <h2 id="totalGoals">0</h2>
+      </div>
+      <div class="stat-card">
+        <span>Completed Milestones</span>
+        <h2 id="completedMilestones">0</h2>
+      </div>
+      <div class="stat-card">
+        <span>Overall Progress</span>
+        <h2 id="overallProgress">0%</h2>
+      </div>
+    </section>
+
+    <section class="add-section">
+      <h2>+ Create a Career Goal</h2>
+      <form id="goalForm">
+        <input id="goalInput" type="text"
+          placeholder="Example: Become a Full Stack Developer" required>
+        <input id="deadlineInput" type="date" required>
+        <button type="submit">Add Goal</button>
+      </form>
+    </section>
+
+    <section class="roadmap-section">
+      <h2>My Roadmap</h2>
+      <div id="goalList"></div>
+      <p id="emptyMessage">No goals yet. Add your first career goal above!</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Small steps today. Big achievements tomorrow. 🌱</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
